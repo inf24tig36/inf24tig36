@@ -171,16 +171,16 @@ button:hover {
 }
 
 .info-contacto {
-  padding: 20px;
+  padding: 2px;
   text-align: center;
-  animation: fadeIn 2s ease-in;
+  animation: fadeIn 1s ease-in;
 }
 
 .mapa {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
-  animation: slideUp 2s ease-in;
+  margin-bottom: 80px;
+  animation: slideUp 1s ease-in;
 }
 
 @keyframes fadeIn {
@@ -206,23 +206,6 @@ iframe {
   border-radius: 10px;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px auto;
-}
-
-th, td {
-  border: 1px solid #ccc;
-  padding: 8px;
-  text-align: center;
-  width: 80px;
-}
-
-th,td {
-  background-color: #f2f2f2;
-}
-
 .import-btn {
   display: block;
   margin: 20px auto;
@@ -233,24 +216,106 @@ th,td {
   cursor: pointer;
   border-radius: 5px;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  background-color: #fff; /* Fundo branco para a tabela */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombras cinzas para destacar */
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+  font-size: 1em;
+  color: #333;
+}
+
+th {
+  background-color: #f9f9f9; /* Cabeçalhos com fundo mais claro */
+  font-weight: bold;
+}
+
+td {
+  background-color: #fafafa; /* Células com fundo claro */
+}
+
+#ementaTable tr:nth-child(even) {
+  background-color: #f9f9f9; /* Linhas alternadas com um tom mais claro */
+}
+
+#ementaTable tr:hover {
+  background-color: #f1f1f1; /* Efeito hover em linhas */
+}
+
 #ementaTable td:nth-child(2), #ementaTable th:nth-child(2) {
-  color: #d32f2f; /* vermelho para Segunda */
+  color: #333; /* Sem cor específica para Segunda */
 }
 
 #ementaTable td:nth-child(3), #ementaTable th:nth-child(3) {
-  color: #388e3c; /* verde para Terça */
+  color: #333; /* Sem cor específica para Terça */
 }
 
 #ementaTable td:nth-child(4), #ementaTable th:nth-child(4) {
-  color: #1976d2; /* azul para Quarta */
+  color: #333; /* Sem cor específica para Quarta */
 }
 
 #ementaTable td:nth-child(5), #ementaTable th:nth-child(5) {
-  color: #f57c00; /* laranja para Quinta */
+  color: #333; /* Sem cor específica para Quinta */
 }
 
 #ementaTable td:nth-child(6), #ementaTable th:nth-child(6) {
-  color: #7b1fa2; /* roxo para Sexta */
+  color: #333; /* Sem cor específica para Sexta */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  table {
+    font-size: 0.9em;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  table {
+    font-size: 0.8em;
+  }
+
+  th, td {
+    padding: 6px;
+  }
+
+  #ementaTable tr {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  #ementaTable td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+
+  #ementaTable td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  #ementaTable td:nth-child(2)::before { content: "Segunda: "; }
+  #ementaTable td:nth-child(3)::before { content: "Terça: "; }
+  #ementaTable td:nth-child(4)::before { content: "Quarta: "; }
+  #ementaTable td:nth-child(5)::before { content: "Quinta: "; }
+  #ementaTable td:nth-child(6)::before { content: "Sexta: "; }
 }
 
 .colunas {
