@@ -1,0 +1,37 @@
+<Ementa>
+  <Sopa>
+    <Segunda>Canja</Segunda>
+    <Terca>Sopa de legumes</Terca>
+    <Quarta>Sopa á Lavrador</Quarta>
+    <Quinta>Ramen</Quinta>
+    <Sexta>Sopa de Letras</Sexta>
+  </Sopa>
+  <PratoDeCarne>
+    <Segunda>Frango</Segunda>
+    <Terca>Bife</Terca>
+    <Quarta>Sopa á Lavrador</Quarta>
+    <Quinta>Ramen</Quinta>
+    <Sexta>Sopa de Letras</Sexta>
+  </PratoDeCarne>
+  <PratoDePeixe>
+    <Segunda>Frango</Segunda>
+    <Terca>Bife</Terca>
+    <Quarta>Sopa á Lavrador</Quarta>
+    <Quinta>Ramen</Quinta>
+    <Sexta>Sopa de Letras</Sexta>
+  </PratoDePeixe>
+  <Fruta>
+     <Segunda>Frango</Segunda>
+    <Terca>Bife</Terca>
+    <Quarta>Sopa á Lavrador</Quarta>
+    <Quinta>Ramen</Quinta>
+    <Sexta>Sopa de Letras</Sexta>
+  </Fruta>
+  <Sobremesa>
+    <Segunda>Frango</Segunda>
+    <Terca>Bife</Terca>
+    <Quarta>Sopa á Lavrador</Quarta>
+    <Quinta>Ramen</Quinta>
+    <Sexta>Sopa de Letras</Sexta>
+  </Sobremesa>
+</Ementa>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Ementa da Semana</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="js/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+<body>
+  <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+  <nav id="menuNav">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="servicos.html">Serviços</a></li>
+      <li><a href="ementa.html">Alimentação</a></li>
+      <li><a href="contacto.html">Contactos</a></li>
+      <li><a href="marcacao.html">Marcações</a></li>
+    </ul>
+  </nav>
+<div class="header-logos">
+    <img src="logo.png" alt="Logotipo" class="logo-fixa">
+    <img src="Consumidor.png" alt="logo_dir" class="logo_dir">
+  </div>
+  <h1><span class="ementa-trigger" onclick="mostrarFormulario()">Ementa da semana:</span></h1>
+<!--   <form id="formEmenta" action="ementa.php" method="post" enctype="multipart/form-data" style="display: none;">
+    <label>Importar nova ementa (.xml):</label><br>
+    <input type="file" name="ficheiroxml" accept=".xml" required>
+    <button type="submit">Importar</button>
+  </form> -->
+  <form id="formEmenta" style="display: none;">
+  <label>Importar nova ementa (.xml):</label><br>
+  <input type="file" id="ficheiroxml" accept=".xml" required>
+  <button type="button" onclick="carregarEmenta()">Importar</button>
+</form>
+  <table id="ementaTable">
+    <thead>
+      <tr>
+        <th>Categoria</th>
+        <th>Segunda</th>
+        <th>Terça</th>
+        <th>Quarta</th>
+        <th>Quinta</th>
+        <th>Sexta</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><th>Sopa</th><td>Canja</td><td>Sopa de legumes</td><td>Sopa á Lavrador</td><td>Ramen</td><td>Sopa de Letras</td></tr>
+      <tr><th>Prato de Carne</th><td>Supremos de Frango</td><td>Bife</td><td>Lombo</td><td>Kebab</td><td>Hamburguer</td></tr>
+      <tr><th>Prato de Peixe</th><td>Robalo</td><td>Lulas</td><td>Dourada</td><td>Pescada</td><td>Polvo</td></tr>
+      <tr><th>Fruta</th><td>Maça</td><td>Pera</td><td>Banana</td><td>Ananás</td><td>Melão</td></tr>
+      <tr><th>Sobremesa</th><td>Pudim</td><td>Mousse</td><td>Gelado</td><td>Gelatina</td><td>Bolo</td></tr>
+    </tbody>
+  </table>
+  <div class="rodape-animado">
+    <div class="texto-marquee">
+      Colónias de férias de verão já disponíveis para inscrição. &nbsp;&nbsp;&nbsp;
+      De 01 de Julho a 31 de Agosto 20% Desconto nos serviços de Alimentação. &nbsp;&nbsp;&nbsp;
+      Todos os direitos reservados ao ATL. &nbsp;&nbsp;&nbsp;
+    </div>
+  </div>
+      <script src="js/script.js"></script>
+</body>
+</html>

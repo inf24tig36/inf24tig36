@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "GdtMYIQbxTJcT9Dxd",
+      });
+   })();
+</script>
+<script src="js/script.js"></script>
+</head>
+<body>
+  <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+  <nav id="menuNav">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="servicos.html">Serviços</a></li>
+      <li><a href="ementa.html">Alimentação</a></li>
+      <li><a href="contacto.html">Contactos</a></li>
+      <li><a href="marcacao.html">Marcações</a></li>
+    </ul>
+  </nav>
+<div class="header-logos">
+    <img src="logo.png" alt="Logotipo" class="logo-fixa">
+    <img src="Consumidor.png" alt="logo_dir" class="logo_dir">
+  </div>
+    <h2>Formulário de Marcação de aula particular:</h2>
+    <div class="form-wrapper">
+    <form>
+      <label for="nome">Nome:</label><br>
+      <input type="text" id="nome" name="nome" required><br><br>
+  
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+  
+      <label for="telefone">Telefone:</label><br>
+      <input type="tel" id="telefone" name="telefone"><br><br>
+  
+      <label for="morada">Morada:</label><br>
+      <input type="text" id="morada" name="morada"><br><br>
+  
+      <label for="disciplina">Disciplina:</label><br>
+      <select id="disciplina" name="disciplina" required>
+        <option value="">-- Selecionar --</option>
+        <option value="Matemática">Matemática</option>
+        <option value="Português">Português</option>
+        <option value="História">História</option>
+        <option value="Inglês">Inglês</option>
+        <option value="Tecnologias de Informação">Tecnologias de Informação</option>
+      </select><br><br>
+  
+      <button type="submit" onclick="sendMail()">Gravar</button>
+    </form>
+    </div>
+    <div class="rodape-animado">
+      <div class="texto-marquee">
+        Colónias de férias de verão já disponiveis para inscrição. &nbsp;&nbsp;&nbsp;
+        De 01 de Julho a 31 de Agosto 20% Desconto nos serviços de Alimentação. &nbsp;&nbsp;&nbsp;
+        Todos os direitos reservados ao ATL. &nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+        <script src="js/script.js"></script>
+</body>
+</html>
