@@ -72,7 +72,7 @@ form {
 
 h2 {
   text-align: center;
-  margin: 40px 0 20px 0;
+  margin: 20px 0 20px 0;
   border-color: snow;
   font-size: 2.2em;
   color: #fafaf7;
@@ -436,8 +436,8 @@ td {
 .logo {
   width: 50%;
   height: 50%;
-  object-fit: 50%;
-  position: top;
+/*   object-fit: 50%;
+  position: top; */
   vertical-align: top;
 }
 
@@ -556,22 +556,36 @@ nav ul li a {
   pointer-events: auto;
 }
 
-/* /* /* Mostrar texto ao clique em mobile/tablet */
-/* @media (max-width: 768px) {
-  .coluna.aberta .conteudo-coluna {
-    opacity: 1;
-    pointer-events: auto;
-  }
+.btnExport {
+  width: 6cm;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
-@media (max-width: 768px) {
-  .conteudo-coluna {
-    font-size: 0.8rem; /* ou 0.95rem para ainda mais pequeno
-    padding: 5px;
-    text-align: center;
-  }
+
+.btnExport:hover {
+  background-color: #3e9643;
+  transform: translateY(-2px);
 }
-@media (max-width: 480px) {
-  .conteudo-coluna {
-    font-size: 0.6rem;
-  }
-}  */
+
+.btnExport::before {
+  content: "⬇️";
+  font-size: 16px;
+}
+.div_btnExport{
+  display: flex; 
+  justify-content: center; 
+  margin-top: 20px;
+}
