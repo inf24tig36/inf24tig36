@@ -40,7 +40,7 @@ function sendMail (){
     categorias.forEach(cat => {
       const linha = document.createElement("tr");
       const th = document.createElement("th");
-      th.textContent = cat.replace(/([A-Z])/g, ' $1').trim(); // formatação bonitinha
+      th.textContent = cat.replace(/([A-Z])/g, ' $1').trim(); // formatação 
       linha.appendChild(th);
 
       dias.forEach(dia => {

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="Ementa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Sopa" type="DiaSemanaType"/>
+        <xs:element name="PratoDeCarne" type="DiaSemanaType"/>
+        <xs:element name="PratoDePeixe" type="DiaSemanaType"/>
+        <xs:element name="Fruta" type="DiaSemanaType"/>
+        <xs:element name="Sobremesa" type="DiaSemanaType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="DiaSemanaType">
+    <xs:sequence>
+      <xs:element name="Segunda" type="xs:string"/>
+      <xs:element name="Terca" type="xs:string"/>
+      <xs:element name="Quarta" type="xs:string"/>
+      <xs:element name="Quinta" type="xs:string"/>
+      <xs:element name="Sexta" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

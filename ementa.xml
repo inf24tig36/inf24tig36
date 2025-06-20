@@ -1,4 +1,5 @@
-<Ementa>
+<?xml version="1.0" encoding="UTF-8"?>
+<Ementa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Valida.xsd">
   <Sopa>
     <Segunda>Canja</Segunda>
     <Terca>Sopa de legumes</Terca>
@@ -21,7 +22,7 @@
     <Sexta>Sopa de Letras</Sexta>
   </PratoDePeixe>
   <Fruta>
-     <Segunda>Frango</Segunda>
+    <Segunda>Frango</Segunda>
     <Terca>Bife</Terca>
     <Quarta>Sopa á Lavrador</Quarta>
     <Quinta>Ramen</Quinta>
